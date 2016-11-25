@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+    <div class="container">
+        <div class="container-items form_style">
+            <div class="container">
+
+                <div class="row custblog_row">
+                    <div class="boxblog-reg">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>Image</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for outfit in outfits %}
+                                <tr>
+                                <td>{{ outfit.name }}</td>
+                                <td>{{ outfit.description }}</td>
+                                <td><a href="{% url 'outfit_items' outfit.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ outfit.image }}"></a></td>
+                            {% endfor %}
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+        </div>
+    </div>
+
+{% endblock %}

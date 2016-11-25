@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load bootstrap_tags %}
+
+{% block content %}
+    <div class="container">
+        <div class="container-items form_style">
+            <div class="container">
+
+                <div class="row custblog_row">
+                    <div class="boxblog-reg">
+
+
+                        <h1>{% if request.user.is_authenticated %}Welcome '{{ request.user.username }} '
+                        {% else %}
+                            <a href="{% url 'login' %}">Please login by following this link</a>
+                        {% endif %}</h1>
+
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Description</th>
+                                <th>It
+                            </thead>
+                            <tbody>
+
+                            {% for item in items %}
+                                <tr>
+                                <td>{{ item.name }}</td>
+                                <td>{{ item.description }}</td>
+                                <td><img height="100" width="100" src="{{ MEDIA_URL }}{{ item.image }}"></td>
+                            {% endfor %}
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    {% if outfit_count > 0 %}
+                        <p>
+                            <button class="btn btn-primary" onclick="location.href='/outfits'">Your Style</button>
+                            Please click of Your Style button to see the styles our Stylist has chosen for you
+                        </p>
+                    {% endif %}
+
+                    <legend>Submit Your Item of Clothing</legend>
+                    {% csrf_token %}
+
+                    {{ form | as_bootstrap }}
+
+                    <div class="from-group">
+                        <input class="btn brn-primary" id="submit_payment_btn" name="commit" type="submit"
+                               value="Submit">
+
+                    </div>
+                    </form>
+                    <br>
+                    <br>
+
+                    <p>
+                        <button class="btn btn-primary" onclick="location.href='/index'">Home
+                        </button>
+                    </p>
+                </div>
+
+
+                {#             {% if outfit_count > 0 %}#}
+                {#                    <p>#}
+                {#                        <button class="btn btn-danger" onclick="location.href='/outfits'">See Styles#}
+                {#                        </button>#}
+                {#                    </p>#}
+                {#{% endif %}#}
+            </div>
+        </div>
+
+
+    </div>
+
+{% endblock %}

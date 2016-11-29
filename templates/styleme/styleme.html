@@ -44,22 +44,25 @@
                         </p>
                     {% endif %}
 
-                    <legend>Submit Your Item of Clothing</legend>
-                    {% csrf_token %}
 
-                    {{ form | as_bootstrap }}
+                    <form action="{% url 'upload_pic' %}" method="POST">
+                        <legend>Submit Your Item of Clothing</legend>
+                        {% csrf_token %}
 
-                    <div class="from-group">
-                        <input class="btn brn-primary" id="submit_payment_btn" name="commit" type="submit"
-                               value="Submit">
+                        {{ form | as_bootstrap }}
 
-                    </div>
+                        <div class="from-group">
+
+                            <input class="btn brn-primary" id="submit_payment_btn" name="commit" type="submit"
+                                   value="Submit">
+
+                        </div>
                     </form>
                     <br>
                     <br>
 
                     <p>
-                        <button class="btn btn-primary" onclick="location.href='/index'">Home
+                        <button class="btn btn-primary" onclick="location.href='/'">Home
                         </button>
                     </p>
                 </div>

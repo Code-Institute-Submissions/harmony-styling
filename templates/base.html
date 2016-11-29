@@ -23,8 +23,8 @@
     <!-- Custom CSS -->
 
 
-    <link href="{% static "slider/css/style.css" %}" rel="stylesheet">
-    <link href="{% static "slider/css/reset.css" %}" rel="stylesheet">
+{#    <link href="{% static "slider/css/style.css" %}" rel="stylesheet">#}
+{#    <link href="{% static "slider/css/reset.css" %}" rel="stylesheet">#}
 
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     <link href="{% static "css/business-casual.css" %}" rel="stylesheet">
@@ -49,6 +49,8 @@
     {% block head_js %}{% endblock %}
 </head>
 
+
+
 <body>
 
 {#<div class="brand"><a href="/">Harmony Styling</a></div>#}
@@ -68,12 +70,12 @@
                 <span class="icon-bar"></span>
             </button>
             <!-- navbar-brand is hidden on larger screens, but visible when the menu is collapsed -->
-            <a class="navbar-brand pull-left" href="index.html">Harmony Styling</a>
+
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav nav-pills pull-right">
-                <li><a class="navbar-brand pull-left" href="/index/">Harmony Stylings</a></li>
+                <li><a class="navbar-brand pull-left" href="/">Harmony Stylings</a></li>
                 <li><a href="/blog/">Blog</a></li>
                 <li><a href="/styleme/">Style Me</a></li>
                 <li><a href="/pages/about/">About</a></li>
@@ -92,10 +94,8 @@
     </div>
     <!-- /.container -->
 </nav>
-lass="item active">#}
-{
-            {% block content %}
-            {% endblock %}
+          {% block content %}
+          {% endblock %}
 
 
 <footer class="navbar-fixed-bottom">

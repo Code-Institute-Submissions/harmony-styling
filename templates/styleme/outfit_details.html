@@ -20,14 +20,15 @@
                         <tbody>
 
 
-                        {% for outfitItems in outfits %}
+                        {% for outfitItem in outfitItems %}
                             <tr>
-
-                                {% if post.image %}
-                                <td> <img src="{{ MEDIA_URL }}{{ outfitItems.image }}" style="width:270px; height:200px"></td>
+                                <td>
+                                {% if outfitItem.image %}
+                                <img src="{{ MEDIA_URL }}{{ outfitItem.image }}" style="width:270px; height:200px">
                                 {% endif %}
-                                <td>{{ outfitItems.name }}</td>
-                                <td>{{ outfitItems.description }}</td>
+                                </td>
+                                <td>{{ outfitItem.name }}</td>
+                                <td>{{ outfitItem.description }}</td>
                             </tr>
                         {% endfor %}
                         </tbody>

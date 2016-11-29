@@ -21,7 +21,8 @@
                                 <tr>
                                 <td>{{ outfit.name }}</td>
                                 <td>{{ outfit.description }}</td>
-                                <td><a href="{% url 'outfit_items' outfit.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ outfit.image }}"></a></td>
+{#                                <td><a href="{% url 'outfit_items' outfit.id %}"><img height="100" width="100" src="{{ MEDIA_URL }}{{ outfit.image }}"></a></td>#}
+                                <td><button class="btn btn-primary" onclick="location.href='{% url 'outfit_items' outfit.id %}'">See Style</button>
                             {% endfor %}
                             </tr>
                             </tbody>

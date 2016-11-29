@@ -1,47 +1,41 @@
-<{% extends "base.html" %}
+{% extends "base.html" %}
 {% load bootstrap_tags %}
 {% load staticfiles %}
 {% block content %}
 
-    <div class="container-items form_style">
-        <div class="container">
+    <div class="container">
+        <div class="container-items form_style">
+            <div class="container">
 
-            <div class="row custblog_row">
-                <div class="boxblog-reg">
-
-                    <table class="table table-striped">
-                        <thead>
-                        <tr>
-                            <th>Image</th>
-                            <th>Name</th>
-                            <th>Description</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-
-
-                        {% for outfitItem in outfitItems %}
+                <div class="row custblog_row">
+                    <div class="boxblog-reg">
+                        <table class="table table-striped">
+                            <thead>
                             <tr>
-                                <td>
-                                {% if outfitItem.image %}
-                                <img src="{{ MEDIA_URL }}{{ outfitItem.image }}" style="width:270px; height:200px">
-                                {% endif %}
-                                </td>
-                                <td>{{ outfitItem.name }}</td>
-                                <td>{{ outfitItem.description }}</td>
+                                <th>Image</th>
+                                <th>Name</th>
+                                <th>Description</th>
                             </tr>
-                        {% endfor %}
-                        </tbody>
-                    </table>
+                            </thead>
+                            <tbody>
 
 
-
-
-
-
-
+                            {% for outfitItem in outfitItems %}
+                                <tr>
+                                    <td>
+                                        {% if outfitItem.image %}
+                                            <img src="{{ MEDIA_URL }}{{ outfitItem.image }}"
+                                                 style="width:270px; height:200px">
+                                        {% endif %}
+                                    </td>
+                                    <td>{{ outfitItem.name }}</td>
+                                    <td>{{ outfitItem.description }}</td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 {% endblock %}

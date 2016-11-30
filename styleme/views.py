@@ -22,8 +22,8 @@ def outfit_items(request, id):
     outfit = get_object_or_404(Outfit, pk = id)
     return render(request, "styleme/outfit_details.html", {"outfitItems": outfit.items.all})
 
-def get_welcome(request):
-    return render(request, "styleme/welcome.html")
+def services(request):
+    return render(request, "styleme/services.html")
 
 def upload_pic(request):
     if request.method == 'POST':

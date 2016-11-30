@@ -36,12 +36,12 @@ urlpatterns = [
     url(r'^cancel_subscription/$', cancel_subscription, name='cancel_subscription'),
     url(r'^cancel/$', accounts_views.cancel, name='cancel'),
     url(r'^styleme/$', styleme_views.my_styleme, name='styleme'),
-    url(r'^welcome/$', styleme_views.get_welcome, name='welcome'),
+    # url(r'^welcome/$', styleme_views.get_welcome, name='welcome'),
     url(r'^upload_pic/$', styleme_views.upload_pic, name='upload_pic'),
     url(r'^outfits/$', styleme_views.users_outfits, name='outfits'),
     url(r'^outfits/(?P<id>\d+)', styleme_views.outfit_items, name='outfit_items'),
     url(r'^details/$', styleme_views.outfit_items, name='details'),
-
+    url(r'^services/$', styleme_views.services, name='services'),
 
 
 ]

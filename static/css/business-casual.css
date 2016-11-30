@@ -129,6 +129,17 @@ hr {
     padding-right: 43px;
     background-color: #fff;
 }
+
+.boxblog-reg1 {
+    margin-bottom: 20px;
+    padding: 0px 15px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.9);
+    margin-top: 33px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #fff;
+}
 .intro-text {
     text-transform: uppercase;
     font-size: 1.25em;

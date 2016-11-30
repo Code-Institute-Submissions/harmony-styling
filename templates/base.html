@@ -28,6 +28,7 @@
 
     <link href="{% static "css/bootstrap.css" %}" rel="stylesheet">
     <link href="{% static "css/business-casual.css" %}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sorts+Mill+Goudy" rel="stylesheet">
 
     <link href="{% static "css/blog.css" %}" rel="stylesheet">
 
@@ -75,10 +76,10 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav nav-pills pull-right">
-                <li><a class="navbar-brand pull-left" href="/">Harmony Stylings</a></li>
-                <li><a href="/blog/">Blog</a></li>
-                <li><a href="/styleme/">Style Me</a></li>
-                <li><a href="/pages/about/">About</a></li>
+                <li style="font-family: "Josefin Slab", "Helvetica Neue", Helvetica, Arial, sans-serif"><a class="navbar-brand pull-left" href="/">Harmony Stylings</a></li>
+                <li><a href="{% url 'blog' %}">Blog</a></li>
+                <li><a href="{% url 'styleme' %}">Style Me</a></li>
+                <li><a href="{% url 'services' %}">Services</a></li>
 
 
                 {% if user.is_authenticated %}

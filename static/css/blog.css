@@ -10,17 +10,23 @@
   border-radius: 15px;
 }
 
-.carousel-caption {
-  background-color: rgba(0,0,0,.5);
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 10;
-  padding: 0 0 10px 25px;
-  color: #fff;
-  text-align: left;
+.carousel-caption h1{
+    font-family: 'Sorts Mill Goudy', serif;
+    font-size: 30px;
+
 }
+
+/*.carousel-caption {*/
+  /*background-color: rgba(0,0,0,.5);*/
+  /*position: absolute;*/
+  /*left: 0;*/
+  /*right: 0;*/
+  /*bottom: 0;*/
+  /*z-index: 10;*/
+  /*padding: 0 0 10px 25px;*/
+  /*color: #fff;*/
+  /*text-align: left;*/
+/*}*/
 
 body {
     font-family: Arial;
@@ -35,7 +41,7 @@ footer {
 }
 
 h1, h1 a {
-    color: #555555;
+    color: white;
     text-decoration: none;
 }
 h3, h3 a {

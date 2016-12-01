@@ -20,22 +20,22 @@
                             <thead>
                             <tr>
                                 <th>Name</th>
-                                <th>Description</th>
-                                <th>It
+{#                                <th>Description</th>#}
+                                <th>Clothing Item</th>
                             </thead>
                             <tbody>
 
                             {% for item in items %}
                                 <tr>
                                 <td>{{ item.name }}</td>
-                                <td>{{ item.description }}</td>
+{#                                <td>{{ item.description }}</td>#}
                                 <td><img height="100" width="100" src="{{ MEDIA_URL }}{{ item.image }}"></td>
                             {% endfor %}
                             </tr>
                             </tbody>
                         </table>
 
-                    </div>
+
 
                     {% if outfit_count > 0 %}
                         <p>
@@ -66,6 +66,7 @@
                         </button>
                     </p>
                 </div>
+                  </div>
 
 
                 {#             {% if outfit_count > 0 %}#}

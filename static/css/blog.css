@@ -140,3 +140,54 @@ a, a:hover {
         font-size: 80px;
     }
 }
+@media (max-width: 768px) {
+    .boxblog-reg1 {
+
+        padding-right: 00px !important;
+        padding-left: 10px !important;
+        font-size: 1.5em;
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}
+
+@media (max-width: 768px) {
+    .boxblog-reg {
+
+        padding-right: 00px !important;
+        padding-left: 10px !important;
+        font-size: 1.5em;
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}
+
+
+@media (max-width: 768px) {
+    .box-reg {
+
+        padding-right: 00px !important;
+        padding-left: 10px !important;
+        font-size: 1.5em;
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+
+        /*padding-right: 00px !important;*/
+        /*padding-left: 10px !important;*/
+        font-size: .9em;
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}
+
+@media (max-width: 768px) {
+    .form-control {
+        display: block;
+        width: 90%;
+    }
+}

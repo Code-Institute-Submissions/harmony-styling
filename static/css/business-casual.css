@@ -125,7 +125,7 @@ hr {
     background: #fff;
     background: rgba(255, 255, 255, 0.9);
     margin-top: 33px;
-    padding-left: 230px;
+    padding-left: 530px;
     padding-right: 43px;
     background-color: #fff;
 }
@@ -181,6 +181,13 @@ footer p {
         font-weight: 700;
         line-height: normal;
         color: #fff;
+    }
+@media screen and (min-width:768px) {
+    .body {
+
+
+    }
+
     }
 
     .top-divider {
@@ -245,5 +252,25 @@ footer p {
         content: '';
         display: table;
         clear: both;
+    }
+}
+
+@media (max-width: 768px) {
+    .boxblog-reg1 {
+
+        padding-right: 00px !important;
+        padding-left: 24px !important;
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
+    }
+}
+
+@media (max-width: 768px) {
+    .boxblog-reg {
+
+        padding-right: 00px !important;
+        padding-left: 24px !important;
+        /*margin-right: auto;*/
+        /*margin-left: auto;*/
     }
 }

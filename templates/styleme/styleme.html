@@ -45,13 +45,13 @@
                     {% endif %}
 
 
-                    <form action="{% url 'upload_pic' %}" method="POST">
+                    <form action="{% url 'upload_pic' %}" method="POST" enctype="multipart/form-data">
                         <legend>Submit Your Item of Clothing</legend>
                         {% csrf_token %}
 
                         {{ form | as_bootstrap }}
 
-                        <div class="from-group">
+                        <div class="form-group">
 
                             <input class="btn brn-primary" id="submit_payment_btn" name="commit" type="submit"
                                    value="Submit">

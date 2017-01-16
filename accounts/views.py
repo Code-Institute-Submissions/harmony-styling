@@ -78,7 +78,7 @@ def login(request):
                 messages.error(request, "You have successfully logged in")
                 return redirect(reverse('profile'))
             else:
-                form.add_error(None, "Your email or password was not recognised")
+                form.add_error(None, "Your email or password was not recognised - Please go to the register tab and register if you have not already done so")
 
     else:
         form = UserLoginForm()

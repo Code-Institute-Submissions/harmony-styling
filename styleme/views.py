@@ -34,10 +34,3 @@ def upload_pic(request):
             outfit.save()
         return redirect(reverse("styleme"))
 
-
-
-
-#
-# def outfit_details(request):
-#     outfit_details=Outfit.objects.all()
-#     return render(request,"styleme/outfit_details.html",{"outfit_details": outfit_details})

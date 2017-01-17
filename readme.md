@@ -34,3 +34,5 @@ The user can log in and subscribe to the service for a fee of 4.99.  The adminis
 This is version 1.0 as it is a proof of concept of uploading items from the user for the admin (online stylist) to put outfits together.  Further enhancements are intended where the outfits are rendered back to the user in a slider format so various matching styles can be mixed and matched.
 
 active gifs ref: www.cinemagraphs.com
+
+live repo https://harmony-styling.herokuapp.com
